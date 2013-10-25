@@ -1,13 +1,15 @@
 $ ->
-  $("#work-list li a").click (event) ->
+  $("#work-list li").on "click", "a", (event) ->
     event.preventDefault()
 
     # Remove any active class first
-    $(".content > div").removeClass("active")
+    $(".content > div").hide()
+    #.removeClass("active")
 
     # Get the class name from img *need to investigate
-    class_name = $(event.target).attr('alt')
+    class_name = this.id
 
     # Display the according content
     $('.content').show()
-    $(".#{class_name}").addClass('active')
+    $(".#{class_name}").slideDown('slow')
+    #addClass('active')
