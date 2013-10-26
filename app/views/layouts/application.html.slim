@@ -20,14 +20,14 @@ html
     header.banner
       nav
         ul
+          li
+            = link_to "me", "http://www.linkedin.com/in/silujia", target: "_blank"
+          | &#149;
           li.active
-            a href="#" me
+            = link_to "work", "/"
           | &#149;
           li
-            a href="#" work
-          | &#149;
-          li
-            a href="#" life
+            = link_to "life", "https://www.facebook.com/silu.jia", target: "_blank"
       .motto
         p
           = link_to "Alpaca", "http://jiasilu.github.io/forks.html", target: "_blank"
@@ -110,3 +110,10 @@ html
 
 
       = yield
+
+  footer
+    .footer-content
+      ul
+        li
+          | &copy; 2013  
+          = link_to "Justin Jia", "http://jiasilu.github.io", target: "_blank"

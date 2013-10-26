@@ -4,21 +4,19 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-font-smoothing: antialiased;
 }
 
 body{
   text-rendering: optimizeLegibility;
   max-width: 2000px;
   min-width: 800px;
-  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-family: varela,"century gothic",helvetica,arial,sans-serif;
   font-size: 12px;
   font-weight: normal;
-  color: #000;
 }
 
-
 p {
-  font-family: varela,"century gothic",helvetica,arial,sans-serif;
   margin-bottom: 1.5em;
   line-height: 2em;
   letter-spacing: 1px;
@@ -35,17 +33,34 @@ ul {
   max-width: 1680px;
 }
 
-section {
+section, footer {
   width: 1100px;
   margin: 0 auto;
   padding: 20px 0;
 }
 
+footer {
+  li {
+    text-shadow: 1px 2px 1px #9B9BA2;
+
+    a {
+      color: #000;
+      &:visited {
+        color: #000;
+      }
+      &:hover {
+        color: #71b3f7;
+      }
+    }
+  }
+}
+
 a {
   text-decoration: none;
+  color: #2A82AC;
 
   &:visited {
-    color: inherit;
+    color: #2A82AC;
   }
 
   &:hover {
@@ -64,6 +79,10 @@ header.banner {
 
   ul {
     font-size: 30px;
+
+    .active {
+      pointer-events: none;
+    }
   }
 }
 
@@ -74,7 +93,6 @@ header.banner {
 
       a {
         display: block;
-        color: #667;
 
         &:hover {
           color: #71b3f7;
@@ -83,6 +101,7 @@ header.banner {
       span {
         text-transform: uppercase;
         text-align: center;
+        text-shadow: 0px 1px 1px #8A8AE7;
 
         a {
           padding-top: 0.7em;
