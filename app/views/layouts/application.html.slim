@@ -28,80 +28,85 @@ html
           | &#149;
           li
             a href="#" life
+      .motto
+        p
+          = link_to "Alpaca", "http://jiasilu.github.io/forks.html", target: "_blank"
+          |  is my favourite animal
 
-    section.content
-      .good
-        .slideshow
-          ul
-            li
-              = image_tag "good.png"
-        .text
-          p.what
-            | GOOD.is is an online community for people who give a damn.
-              It is our new platform — a gathering place and a growing toolkit
-              for pragmatic idealists to creatively and collaboratively engage
-              with each other, our communities, and our world.
-          p.who
-            | I involved in all aspects of web development — from the server
-              side and databases, to front end HTML, CSS and JavaScript,
-              using Ruby on Rails, MySQL, jQuery, Backbone.js, Underscore.js,
-              SASS, SLIM and CoffeeScript.
-      .spots
-        .slideshow
-          ul
-            li
-              = image_tag "spots.png"
-        .text
-          p spots.good.is is a map application for GOOD community.
-      .doodoo
-        .slideshow
-          ul
-            li
-              img src="http://payload83.cargocollective.com/1/4/157364/3963947/fnotr_ipad_06_1036.png" alt="good_1"
-        .text
-          p DooDoo is a campaign for Gates Foundation.
-      .analytics
-        .slideshow
-          ul
-            li
-              img src="http://payload83.cargocollective.com/1/4/157364/3963947/fnotr_ipad_06_1036.png" alt="good_1"
-        .text
-          p Google Analytics and Mixpanel projects.
-      .adamour
-        .slideshow
-          ul
-            li
-              img src="http://payload83.cargocollective.com/1/4/157364/3963947/fnotr_ipad_06_1036.png" alt="good_1"
-        .text
-          p E-commerce shopping site.
+    .wrapper
+      section.content
+        .good
+          .slideshow
+            ul
+              li
+                = image_tag "good.png"
+          .text
+            p.what
+              | GOOD.is is an online community for people who give a damn.
+                It is our new platform — a gathering place and a growing toolkit
+                for pragmatic idealists to creatively and collaboratively engage
+                with each other, our communities, and our world.
+            p.who
+              | I involved in all aspects of web development — from the server
+                side and databases, to front end HTML, CSS and JavaScript,
+                using Ruby on Rails, MySQL, jQuery, Backbone.js, Underscore.js,
+                SASS, SLIM and CoffeeScript.
+        .spots
+          .slideshow
+            ul
+              li
+                = image_tag "spots.png"
+          .text
+            p spots.good.is is a map application for GOOD community.
+        .doodoo
+          .slideshow
+            ul
+              li
+                img src="http://payload83.cargocollective.com/1/4/157364/3963947/fnotr_ipad_06_1036.png" alt="good_1"
+          .text
+            p DooDoo is a campaign for Gates Foundation.
+        .analytics
+          .slideshow
+            ul
+              li
+                img src="http://payload83.cargocollective.com/1/4/157364/3963947/fnotr_ipad_06_1036.png" alt="good_1"
+          .text
+            p Google Analytics and Mixpanel projects.
+        .adamour
+          .slideshow
+            ul
+              li
+                img src="http://payload83.cargocollective.com/1/4/157364/3963947/fnotr_ipad_06_1036.png" alt="good_1"
+          .text
+            p E-commerce shopping site.
 
-    section.container
-      ul#work-list
-        li
-          a href="#" id="good"
-            img src="http://payload83.cargocollective.com/1/4/157364/3963947/prt_320x212_1362453764.png" alt="good"
-          span
-            a href="http://www.good.is" good.is
-        li
-          a href="#" id="spots"
-            img src="http://payload83.cargocollective.com/1/4/157364/3964162/prt_320x212_1362451552.png" alt="spots"
-          span
-            a href="http://spots.good.is" spots.good.is
-        li
-          a href="#" id="doodoo"
-            img src="http://payload83.cargocollective.com/1/4/157364/3964062/prt_320x212_1362454271.png" alt="doodoo"
-          span
-            a href="http://www.good.is/giveashit" Give a Shit
-        li
-          a href="#" id="analytics"
-            img src="http://payload83.cargocollective.com/1/4/157364/3964084/prt_320x212_1362454987.png" alt="analytics"
-          span
-            a href="http://www.good.is" Analytics
-        li
-          a href="#" id="adamour"
-            img src="http://payload83.cargocollective.com/1/4/157364/3964107/prt_320x212_1360562948.png" alt="adamour"
-          span
-            a href="http://www.adamour.com" adamour.com
+      section.container
+        ul#work-list
+          li
+            a href="#" id="good"
+              img src="http://payload83.cargocollective.com/1/4/157364/3963947/prt_320x212_1362453764.png" alt="good"
+            span
+              = link_to "good.is", "http://www.good.is", target: '_blank'
+          li
+            a href="#" id="spots"
+              img src="http://payload83.cargocollective.com/1/4/157364/3964162/prt_320x212_1362451552.png" alt="spots"
+            span
+              = link_to "spots.good.is", "http://spots.good.is", target: '_blank'
+          li
+            a href="#" id="doodoo"
+              img src="http://payload83.cargocollective.com/1/4/157364/3964062/prt_320x212_1362454271.png" alt="doodoo"
+            span
+              = link_to "Give a Shit", "http://www.good.is/giveashit", target: '_blank'
+          li
+            a href="#" id="analytics"
+              img src="http://payload83.cargocollective.com/1/4/157364/3964084/prt_320x212_1362454987.png" alt="analytics"
+            span
+              = link_to "Analytics", "http://www.good.is", target: '_blank'
+          li
+            a href="#" id="adamour"
+              img src="http://payload83.cargocollective.com/1/4/157364/3964107/prt_320x212_1360562948.png" alt="adamour"
+            span
+              = link_to "adamour.com", "http://www.adamour.com", target: '_blank'
 
 
-    = yield
+      = yield

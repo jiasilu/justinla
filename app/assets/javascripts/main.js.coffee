@@ -1,5 +1,5 @@
 $ ->
-  $("#work-list li").on "click", "a", (event) ->
+  $("#work-list li").on "click", ">a", (event) ->
     event.preventDefault()
 
     # Remove any active class first
