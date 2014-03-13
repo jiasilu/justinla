@@ -9,11 +9,13 @@ html {
 
 body{
   text-rendering: optimizeLegibility;
-  max-width: 2000px;
+  max-width: 87.75em;
   min-width: 800px;
   font-family: varela,"century gothic",helvetica,arial,sans-serif;
   font-size: 12px;
   font-weight: normal;
+  margin: 40px auto;
+  padding: 0 1em;
 }
 
 p {
@@ -97,6 +99,7 @@ header.banner {
         &:hover {
           opacity: 0.5;
           color: #71b3f7;
+          transition: 0.2s;
         }
       }
       span {
